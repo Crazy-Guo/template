@@ -1,6 +1,6 @@
 <template>
   <div class="company">
-    {{ $t('nav.company') }}test
+    {{ $t('nav.company') }}test123
   </div>
 </template>
 
