@@ -25,8 +25,8 @@ jobs:
         password: ${{ secrets.USER_PASS }}
         # 进入到项目目录清空文件夹
         script: |
-          cd {{secrets.FRONTEND_PATH}}
-          sudo rm -r {{secrets.FRONTEND_PATH}}/*
+          cd ${{secrets.FRONTEND_PATH}}
+          sudo rm -r ${{secrets.FRONTEND_PATH}}/*
     - name: deploy
       # 因为构建之后，需要把代码上传到服务器上，所以需要连接到ssh，并且做一个拷贝操作
       uses: cross-the-world/scp-pipeline@master
@@ -39,4 +39,4 @@ jobs:
         pass: ${{ secrets.USER_PASS }}
         connect_timeout: 10s
         local: './dist/*'
-        remote: /usr/website/frontend
+        remote: ${{secrets.FRONTEND_PATH}}
