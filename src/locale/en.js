@@ -1,6 +1,6 @@
 export default {
   nav: {
-    home: 'Hometest',
+    home: 'Home',
     company: 'Company',
     team: 'Team',
   },
