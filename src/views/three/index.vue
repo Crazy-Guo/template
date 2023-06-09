@@ -29,7 +29,7 @@
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
     box.value.appendChild(renderer.domElement);
 
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
@@ -54,7 +54,7 @@
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
 
-      renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
+      renderer.setSize(window.innerWidth / 1.3, window.innerHeight / 1.3);
     };
 
     function animate() {
