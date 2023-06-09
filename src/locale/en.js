@@ -3,5 +3,6 @@ export default {
     home: 'Home',
     company: 'Company',
     team: 'Team',
+    threeJs: 'three.js',
   },
 };

@@ -64,6 +64,11 @@
       title: i18n('nav.team'),
       icon: 'PieChartOutlined',
     },
+    {
+      path: '/three',
+      title: i18n('nav.threeJs'),
+      icon: 'PieChartOutlined',
+    },
   ];
   // const isActive = (path) => router.currentRoute.value.path === path;
   const toPath = (path) => {
